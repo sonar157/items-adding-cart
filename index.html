@@ -18,8 +18,12 @@
             update();"
         >+3</button>
         <button onclick=
-            "quant-=1;
-            update();"
+            "if (quant===0){
+            document.querySelector("#cart").innerText="no items in cart";
+            }
+            else{
+            quant-=1;
+            update();}"
         >remove from cart</button>
         <button onclick="
             quant=0; 
