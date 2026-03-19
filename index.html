@@ -18,12 +18,8 @@
             update();"
         >+3</button>
         <button onclick=
-            "if (quant===0){
-            document.querySelector("#cart").innerText="no items in cart";
-            }
-            else{
-            quant-=1;
-            update();}"
+            "quant=Math.max(0,quant-1);
+            update();"
         >remove from cart</button>
         <button onclick="
             quant=0; 
