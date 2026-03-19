@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        cart
+    </head>
+    <body>
+        <h2 id="cart">cart quantity:0</h2>
+        <button onclick= 
+            "quant+=1; 
+            update();"
+        >add to card</button>
+        <button onclick=
+            "quant+=2;
+            update();"
+        >+2</button>
+        <button onclick=
+            "quant+=3;
+            update();"
+        >+3</button>
+        <button onclick=
+            "quant-=1;
+            update();"
+        >remove from cart</button>
+        <button onclick="
+            quant=0; 
+            update();"
+        >reset</button>
+    </body>
+    <script>
+        let quant=0;
+        function update(){
+            document.querySelector("#cart").innerText=`cart quantity:${quant}`;
+        }
+    </script>
+</html>
